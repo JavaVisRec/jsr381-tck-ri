@@ -2,6 +2,7 @@ package jsr381.tck.ri;
 
 import jsr381.tck.spi.JSR381Configuration;
 
+import javax.visrec.ml.classification.BinaryClassifier;
 import javax.visrec.ml.classification.ImageClassifier;
 import java.io.File;
 import java.io.IOException;
@@ -36,5 +37,10 @@ public class DeepNettsJSR381Configuration implements JSR381Configuration {
                 .learningRate(0.01f)
                 .getBuildingBlock();
         return buildingBlock;
+    }
+
+    @Override
+    public BinaryClassifier.BuildingBlock getSpamBinaryClassificationBuildingBlock() {
+        throw new UnsupportedOperationException("not implemented yet");
     }
 }
