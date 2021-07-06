@@ -9,7 +9,8 @@
     <version>1.0.0</version>
 
     <properties>
-        <javax.visrec.version>1.0-SNAPSHOT</javax.visrec.version>
+        <visrec.ri.version>1.0.3-SNAPSHOT</visrec.ri.version>
+        <visrec.tck.version>1.0.0</visrec.tck.version>
         <testng.version>6.14.3</testng.version>
     </properties>
 
@@ -18,19 +19,13 @@
         <dependency>
             <groupId>javax.visrec</groupId>
             <artifactId>jsr381-tck</artifactId>
-            <version>${javax.visrec.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>javax.visrec</groupId>
-                    <artifactId>visrec-ri</artifactId>
-                </exclusion>
-            </exclusions>
+            <version>${visrec.tck.version}</version>
         </dependency>
 
         <dependency>
             <groupId>javax.visrec</groupId>
             <artifactId>visrec-ri</artifactId>
-            <version>${javax.visrec.version}</version>
+            <version>${visrec.ri.version}</version>
         </dependency>
 
         <dependency>
